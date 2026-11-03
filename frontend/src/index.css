@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply min-h-screen bg-sand-50 font-sans text-ink-900 antialiased;
+    background-image:
+      radial-gradient(ellipse 80% 50% at 10% -10%, rgba(107, 155, 122, 0.18), transparent),
+      radial-gradient(ellipse 60% 40% at 100% 0%, rgba(224, 208, 180, 0.5), transparent),
+      linear-gradient(180deg, #f7f3eb 0%, #efe6d6 100%);
+  }
+}
+
+@layer utilities {
+  .fade-in {
+    animation: fadeIn 0.35s ease-out both;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
