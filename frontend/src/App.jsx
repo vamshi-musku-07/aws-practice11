@@ -70,7 +70,7 @@ export default function App() {
           Your todos
         </h1>
         <p className="mt-2 text-ink-700/70">
-          Capture vamshi, check them off, keep moving.
+          Capture vamshiiiiiiiiiii, check them off, keep moving.
         </p>
       </header>
 
