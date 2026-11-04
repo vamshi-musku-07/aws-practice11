@@ -1,4 +1,6 @@
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000/api";
+// Use relative /api by default so Vite proxy (or same-origin Express) handles it.
+// Only set VITE_API_URL if the API is on a different public origin.
+const API_URL = import.meta.env.VITE_API_URL || "/api";
 
 async function request(path, options = {}) {
   const res = await fetch(`${API_URL}${path}`, {
